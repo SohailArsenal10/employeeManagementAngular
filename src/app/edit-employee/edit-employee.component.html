@@ -1,0 +1,28 @@
+<div>
+  <div>
+    <h3>First Name</h3>
+    <input type="text" [(ngModel)]="employee.firstName" />
+    <h3>Last Name</h3>
+    <input type="text" [(ngModel)]="employee.lastName" required />
+    <h3 class="first">Email</h3>
+    <input type="text" [(ngModel)]="employee.email" required />
+    <button
+      pButton
+      label="Save"
+      icon="pi pi-check"
+      style="margin-right: .25em"
+      (click)="updateEmployee()"
+    >
+      Update
+    </button>
+    <button
+      type="button"
+      label="Cancel"
+      icon="pi pi-times"
+      class="ui-button-secondary"
+      (click)="cancelEmployee()"
+    >
+      Cancel
+    </button>
+  </div>
+</div>

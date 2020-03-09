@@ -1,0 +1,21 @@
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let employee of employees">
+    <td>
+      {{ employee.firstName }}
+    </td>
+    <td>
+      {{ employee.lastName }}
+    </td>
+    <td>
+      {{ employee.email }}
+    </td>
+    <td>
+      <button (click)="editEmployee(employee.id)">Edit Employee</button>
+    </td>
+  </tr>
+</table>
